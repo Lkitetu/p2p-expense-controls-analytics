@@ -1,0 +1,7 @@
+test,vouchers,amount
+T1 Duplicate - pair,2708,84219510.84
+T1 Duplicate - batch,3701,86963007.9098
+T2 Near-duplicate,2992,114097336.8416
+T3 Split purchase,6280,17428653.2799
+T4 Recurring direct voucher,7735,51576957.81
+T5 Round-dollar (non-contract),297,18342000.0

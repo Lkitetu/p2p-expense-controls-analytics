@@ -1,0 +1,18 @@
+{
+  "in_scope_vouchers":443596.0,
+  "in_scope_paid_$B":8.83,
+  "unique_flagged_vouchers":23277.0,
+  "flagged_$M":367.8,
+  "tierA_duplicate_pairs":2708.0,
+  "tierA_duplicate_$M":84.22,
+  "split_clusters":460.0,
+  "recurring_direct_relationships":145.0,
+  "recurring_direct_$M":51.6,
+  "june_vs_avg_%":-22.0,
+  "benford_overall_MAD":0.0025,
+  "concentrated_categories":15.0,
+  "concentrated_category_spend_$M":956.0,
+  "direct_voucher_test4_scope_$M":102.3,
+  "off_contract_$M":845.0,
+  "off_contract_share_%":9.6
+}
