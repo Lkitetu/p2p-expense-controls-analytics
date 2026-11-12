@@ -81,6 +81,18 @@ Each flagged voucher gets points per test it trips (Tier A duplicate 40, split 3
 
 ![Monthly](charts/02_monthly_spend.png) ![Benford](charts/04_benford.png)
 
+## Power BI dashboard
+The output tables feed a three-page Power BI report (`dashboard/P2P_Controls_Dashboard.pbix`) built for a disbursement reviewer:
+
+**1. Control Overview:** headline KPIs, flagged dollars by control test, spend by payment path, and monthly payments, filterable by department.
+![Control Overview](dashboard/dashboard_p1.png)
+
+**2. Exception Detail:** the ranked exception register. Reviewers click a control test or department and work down from the highest risk score.
+![Exception Detail](dashboard/dashboard_p2.png)
+
+**3. Sourcing:** category concentration (top-supplier share and HHI) and the vendors paid repeatedly through one-time direct vouchers.
+![Sourcing](dashboard/dashboard_p3.png)
+
 ## GenAI with validation
 The [exception memo](exception_memo.md) was **drafted with a generative AI assistant** from the output tables. I then wrote [`scripts/validate_memo.py`](scripts/validate_memo.py) to **recompute all 34 figures in the memo from the source data**. All 34 match, and the validation log is appended to the memo. The point is to use AI for speed while keeping every number traceable.
 
@@ -98,7 +110,7 @@ scripts/build_notebook.py       generates the notebook (single source of truth)
 scripts/validate_memo.py        recomputes every memo figure from /output
 output/                         tables for Power BI (fact_payments.zip, exceptions.csv, ...)
 charts/                         figures used above
-dashboard/                      Power BI file and screenshots
+dashboard/                      Power BI report (.pbix) and page screenshots
 ```
 
 ## Tools
